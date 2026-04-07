@@ -1,10 +1,12 @@
-let titulo = document.querySelector('h1');
-titulo.innerHTML = ('Jogo do número secreto');
+function exibirTextoTela(tag, texto){
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+}
 
-let paragrafo = document.querySelector('p');
-paragrafo.innerHTML = ('Tente advinhar o número secreto entre 1 e 100');
+exibirTextoTela('h1', 'Jogo do número secreto');
+exibirTextoTela('p', 'Tente advinhar o número secreto entre 1 e 10');
+
 
 function verificarChute(){
     console.log('Verificando o chute');
-    let chute = document.querySelector('#chute').value;
 }
